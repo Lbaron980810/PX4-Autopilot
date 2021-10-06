@@ -14,7 +14,7 @@ px4_add_board(
 		TEL2:/dev/ttyS2
 		TEL4:/dev/ttyS6
 	DRIVERS
-		adc/ads1115
+		#adc/ads1115
 		adc/board_adc
 		barometer # all available barometer drivers
 		batt_smbus
@@ -38,8 +38,8 @@ px4_add_board(
 		magnetometer # all available magnetometer drivers
 		optical_flow # all available optical flow drivers
 		osd
-		pca9685
-		pca9685_pwm_out
+		#pca9685
+		#pca9685_pwm_out
 		#power_monitor/ina226
 		#protocol_splitter
 		pwm_input
