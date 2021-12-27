@@ -177,7 +177,7 @@ elif [ "$program" == "gazebo" ] && [ ! -n "$no_sim" ]; then
 			# gzserver needs to be running to avoid a race. Since the launch
 			# is putting it into the background we need to avoid it by backing off
 			sleep 3
-			nice -n 20 gzclient --verbose $follow_mode &
+			nice -n 20 gzclient --verbose & # $follow_mode &
 			GUI_PID=$!
 		fi
 	else

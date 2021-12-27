@@ -34,6 +34,8 @@
 px4_add_library(ControlAllocation
 	ControlAllocation.cpp
 	ControlAllocation.hpp
+	ControlAllocationOmniHex.cpp
+	ControlAllocationOmniHex.hpp
 	ControlAllocationPseudoInverse.cpp
 	ControlAllocationPseudoInverse.hpp
 	ControlAllocationSequentialDesaturation.cpp

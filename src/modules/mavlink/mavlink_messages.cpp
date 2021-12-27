@@ -56,6 +56,7 @@
 #include <uORB/SubscriptionMultiArray.hpp>
 #include <uORB/topics/vehicle_status.h>
 
+#include "streams/ARM_ROTATION.hpp"
 #include "streams/ACTUATOR_CONTROL_TARGET.hpp"
 #include "streams/ACTUATOR_OUTPUT_STATUS.hpp"
 #include "streams/ALTITUDE.hpp"
@@ -548,6 +549,10 @@ static const StreamListItem streams_list[] = {
 #if defined(GPS_RTCM_DATA_HPP)
 	create_stream_list_item<MavlinkStreamGPSRTCMData>()
 #endif // GPS_RTCM_DATA_HPP
+#if defined(ARM_ROTATION_HPP)
+	create_stream_list_item<MavlinkStreamArmRotation>()
+#endif // ARM_ROTATION_HPP
+
 };
 
 const char *get_stream_name(const uint16_t msg_id)
